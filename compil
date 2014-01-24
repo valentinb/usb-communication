@@ -1,1 +1,1 @@
-g++ -I ./include/common -o ./exe/main ./source/main.cpp
+g++ -I ./include/common -lusb -o ./exe/main ./source/main.cpp
