@@ -1,10 +1,9 @@
 #include <iostream>
 #include <mavlink.h>
- 
-int main()
-{
-    std::cout << "Hello World !\n";
-    
+#include <usb.h>
+
+void ceate_mavlink_ping_msg () {
+
     mavlink_message_t msg;
     
     mavlink_ping_t ping_data;
@@ -20,5 +19,12 @@ int main()
     std::cout << "\n";
     std::cout << msg.msgid;
     std::cout << "\n";
+}
+ 
+int main()
+{
+    std::cout << "Hello World !\n";
+    
+    ceate_mavlink_ping_msg ();
     
 }
